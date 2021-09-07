@@ -26,7 +26,7 @@ namespace AplicacionOnlyPans
         {
             if (this.txtUsuario.Text == "Admin" && this.txtContraseña.Text == "admin")
             {
-                Form2 llamar = new Form2();
+                Principal llamar = new Principal();
                 llamar.Show();
                 this.Hide();
             }
@@ -34,6 +34,11 @@ namespace AplicacionOnlyPans
             {
                 MessageBox.Show("Usuario o contraseña Incorrecta");
             }
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+            txtContraseña.PasswordChar = '*';
         }
     }
 }

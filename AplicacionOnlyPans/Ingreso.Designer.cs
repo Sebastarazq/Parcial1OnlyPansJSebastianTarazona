@@ -81,6 +81,7 @@ namespace AplicacionOnlyPans
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(154, 20);
             this.txtContraseña.TabIndex = 4;
+            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // btnIngresar
             // 

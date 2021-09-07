@@ -50,6 +50,7 @@ namespace AplicacionOnlyPans
             this.rtxtVentas.Size = new System.Drawing.Size(212, 273);
             this.rtxtVentas.TabIndex = 1;
             this.rtxtVentas.Text = "";
+            this.rtxtVentas.TextChanged += new System.EventHandler(this.rtxtVentas_TextChanged);
             // 
             // label1
             // 

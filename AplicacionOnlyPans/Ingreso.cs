@@ -36,7 +36,7 @@ namespace AplicacionOnlyPans
 
             if (this.txtName.Text == "Sebastian" && this.txtPassword.Text == "Sebastianadmin")
             {
-                Ingreso llamar = new Ingreso();
+                Principal llamar = new Principal();
                 llamar.Show();
             }
 
@@ -81,7 +81,7 @@ namespace AplicacionOnlyPans
         private void btnUser_Click(object sender, EventArgs e)
         {
 
-            if (this.txtName.Text == "User" && this.txtPassword.Text == "User42")
+            if (this.txtName.Text == "Usuario" && this.txtPassword.Text == "Usuario123")
             {
                 Form3 llamar = new Form3();
                 llamar.Show();
@@ -89,7 +89,7 @@ namespace AplicacionOnlyPans
 
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecta, revise si estan bien escritos");
+                MessageBox.Show("Usuario o contraseña incorrecta, revise lo ingresado");
             }
             rtxtContainer.Text = txtName.Text + "-" + txtPassword.Text;
             txtName.Clear();
